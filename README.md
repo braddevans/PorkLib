@@ -1,6 +1,7 @@
 # PorkLib
 
-[![Build Status](https://jenkins.daporkchop.net/job/PorkStudios/job/PorkLib/job/development/badge/icon)](https://jenkins.daporkchop.net/job/PorkStudios/job/PorkLib/)
-[![Discord](https://img.shields.io/discord/428813657816956929.svg)](https://discord.gg/FrBHHCk)
+[![Generic badge](https://img.shields.io/badge/Build_Status-Passing-purple.svg)](https://nexus.piratescode.co.uk/repository/maven-releases/net/daporkchop/speedboost/SpeedBoost-1.12.2/)
 
-[https://porklib.daporkchop.net/](https://porklib.daporkchop.net/)
+[![Generic badge](https://img.shields.io/badge/Discord_Chat-26%20online-Blue.svg)](https://discord.gg/FrBHHCk)
+
+[https://nexus.piratescode.co.uk/repository/maven-releases/](https://nexus.piratescode.co.uk/#browse/browse:maven-releases:net%2Fdaporkchop%2Fspeedboost%2FSpeedBoost-1.12.2)

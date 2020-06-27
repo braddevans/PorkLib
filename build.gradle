@@ -91,31 +91,15 @@ allprojects {
     }
 
     publishing {
-        repositories {
-            if (project.hasProperty("nukkitxMavenUsername") && project.hasProperty("nukkitxMavenPassword")) {
-                maven {
-                    credentials {
-                        username = "$nukkitxMavenUsername"
-                        password = "$nukkitxMavenPassword"
-                    }
-
-                    name = "NukkitX"
-                    url = version.endsWith("SNAPSHOT") ? "https://repo.nukkitx.com/snapshot/" : "https://repo.nukkitx.com/release/"
-                }
-            }
-            if (project.hasProperty("daporkchopMavenUsername") && project.hasProperty("daporkchopMavenPassword")) {
-                maven {
-                    credentials {
-                        username = "$daporkchopMavenUsername"
-                        password = "$daporkchopMavenPassword"
-                    }
-
-                    name = "DaPorkchop_"
-                    url = version.endsWith("SNAPSHOT") ? "https://maven.daporkchop.net/snapshot/" : "https://maven.daporkchop.net/release/"
-                }
-            }
-        }
-
+		repositories {
+			maven {
+				url 'https://nexus.piratescode.co.uk/repository/maven-' + (project.version.endsWith('-SNAPSHOT') ? 'snapshots' : 'releases') + '/'
+				credentials {
+					username 'publish'
+					password 'Pa$$w0rd'
+				}
+			}
+		}
         publications {
             maven(MavenPublication) {
                 groupId = "net.daporkchop.lib"
